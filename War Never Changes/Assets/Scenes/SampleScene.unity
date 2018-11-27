@@ -113,6 +113,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &159857588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159857591}
+  - component: {fileID: 159857590}
+  - component: {fileID: 159857589}
+  m_Layer: 0
+  m_Name: End of Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159857589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159857588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e1e32505d24764798a39aa19de6ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &159857590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159857588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.426773, y: 10.228083, z: 6.7714324}
+  m_Center: {x: 6.1840057, y: 4.6140413, z: 0.07645631}
+--- !u!4 &159857591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159857588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 82.682, y: 0.328, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &365195161
 Prefab:
   m_ObjectHideFlags: 0
@@ -275,7 +328,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4191961436120266, guid: 57fc3ceeb405e3c439f18a327aa156ac, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.67
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: 4191961436120266, guid: 57fc3ceeb405e3c439f18a327aa156ac, type: 2}
       propertyPath: m_LocalPosition.y
