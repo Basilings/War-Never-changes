@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class guard_patrol : MonoBehaviour {
 
@@ -42,6 +43,16 @@ public class guard_patrol : MonoBehaviour {
 
         transform.Rotate(new Vector3(180, 0, 0));
 
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("SampleScene");
+
+        }
     }
 
 }
