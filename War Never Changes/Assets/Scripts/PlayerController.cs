@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float back_ground = 2.5f;
+    public float back_ground = 10;
     public Transform player;
-    public float player_speed = 4;
+    public float player_speed = -4;
     private CharacterController _controller;
     
     // Use this for initialization
@@ -29,14 +29,14 @@ public class PlayerController : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.W))
         {
-            player.Translate(0, 0, back_ground);
+            player.Translate(0, 0, -back_ground);
 
             _controller.enabled = !_controller.enabled;
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
-            player.Translate(0, 0, -back_ground);
+            player.Translate(0, 0, back_ground);
 
             _controller.enabled = !_controller.enabled;
         }
