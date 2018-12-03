@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform player;
     public float player_speed = -4;
     private CharacterController _controller;
+    private Vector3 reset_player;
     
     // Use this for initialization
     void Start()
@@ -36,7 +37,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.W))
         {
-            player.Translate(0, 0, back_ground);
+            reset_player = new Vector3(player.position.x, player.position.y, 0);
+            player.position = reset_player;
 
             _controller.enabled = !_controller.enabled;
         }
@@ -61,20 +63,4 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "BackGround")
-        {
-            player_speed = 0;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "BackGround")
-        {
-            player_speed = 4;
-        }
-    }
 }
