@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class guard_patrol : MonoBehaviour {
 
-
+    public PlayerController playerscript;
     public float MaxSpeed;
     public Transform LeftPos, RightPos;
     public float flip = 180;
@@ -15,6 +15,7 @@ public class guard_patrol : MonoBehaviour {
     void Start()
     {
         _myRB = GetComponent<Rigidbody>();
+        playerscript = GetComponent<PlayerController>();
     }
 
     void Update()

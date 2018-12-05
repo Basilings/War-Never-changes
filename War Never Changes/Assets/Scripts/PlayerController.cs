@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float player_speed = -4;
     private CharacterController _controller;
     private Vector3 reset_player;
+    public bool distguised = false;
     
     // Use this for initialization
     void Start()
@@ -49,18 +50,23 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         { 
             
-                gameObject.GetComponent<Renderer>().material.color = Color.red;
+                gameObject.GetComponent<Renderer>().material.color = Color.green;
+            distguised = true;
 
          }
 
-        if (Input.GetKeyDown(KeyCode.B))
-         {
-                gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        if (Input.GetKeyDown(KeyCode.R) && distguised == true)
+        {
 
-         }
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+
+            distguised = false;
+
+        }
 
 
-        
+
+
     }
 
 }
