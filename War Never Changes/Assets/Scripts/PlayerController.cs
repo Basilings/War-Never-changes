@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
                 gameObject.GetComponent<Renderer>().material.color = Color.green;
             distguised = true;
 
+            
          }
 
         if (Input.GetKeyDown(KeyCode.R) && distguised == true)
@@ -61,6 +62,9 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = Color.red;
 
             distguised = false;
+
+           
+
 
         }
 

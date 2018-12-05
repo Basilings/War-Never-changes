@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - back_ground
-  - BackGround
+  - Meds
   layers:
   - Default
   - TransparentFX
