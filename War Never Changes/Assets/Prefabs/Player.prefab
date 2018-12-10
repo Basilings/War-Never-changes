@@ -178,6 +178,7 @@ MonoBehaviour:
   back_ground: 2.5
   player: {fileID: 4758380949833830}
   player_speed: -4
+  distguised: 0
 --- !u!136 &136054495134260202
 CapsuleCollider:
   m_ObjectHideFlags: 1

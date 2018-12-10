@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114467681898168326}
   - component: {fileID: 65420438225402904}
   - component: {fileID: 108770003093014886}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Guard 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,8 +258,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5482247, y: 0.54001963, z: 3.5003674}
-  m_Center: {x: -0.116531074, y: -0.058046043, z: 1.7257019}
+  m_Size: {x: 2.0345223, y: 0.54001963, z: 3.5003674}
+  m_Center: {x: -0.114928216, y: -0.058046043, z: 1.7257019}
 --- !u!108 &108770003093014886
 Light:
   m_ObjectHideFlags: 1
@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58eb18d52ccc567479279f61694aeee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerscript: {fileID: 0}
   MaxSpeed: 2
   LeftPos: {fileID: 4348316172818328}
   RightPos: {fileID: 4539406714095406}

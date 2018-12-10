@@ -51,10 +51,11 @@ public class guard_patrol : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            
-        }
+			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        
 
         
     }
 
+}
 }
