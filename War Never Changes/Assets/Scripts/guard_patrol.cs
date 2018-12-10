@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class guard_patrol : MonoBehaviour {
 
-    public PlayerController playerscript;
-    public float MaxSpeed;
+    public float max_speed;
     public Transform LeftPos, RightPos;
     public float flip = 180;
     private Rigidbody _myRB;
@@ -15,12 +14,11 @@ public class guard_patrol : MonoBehaviour {
     void Start()
     {
         _myRB = GetComponent<Rigidbody>();
-        playerscript = GetComponent<PlayerController>();
     }
 
     void Update()
     {
-        _myRB.velocity = new Vector3(MaxSpeed * transform.localScale.x, _myRB.velocity.y, _myRB.velocity.z);
+        _myRB.velocity = new Vector3(max_speed * transform.localScale.x, _myRB.velocity.y, _myRB.velocity.z);
 
         if (transform.position.x > RightPos.position.x && !_isFacingLeft)
         {
@@ -47,15 +45,7 @@ public class guard_patrol : MonoBehaviour {
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
-        
+    
 
-        
-    }
 
-}
 }

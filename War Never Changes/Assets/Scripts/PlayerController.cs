@@ -47,21 +47,20 @@ public class PlayerController : MonoBehaviour
 
         //Changing color
 
-        if (Input.GetKeyDown(KeyCode.R))
-        { 
-            
-                gameObject.GetComponent<Renderer>().material.color = Color.green;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.blue;
             distguised = true;
 
             
          }
 
-        if (Input.GetKeyDown(KeyCode.R) && distguised == true)
+        if (Input.GetKeyDown(KeyCode.E) && distguised == true)
         {
 
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
 
-            distguised = false;
+            //distguised = false;
 
            
 
