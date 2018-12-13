@@ -8,6 +8,8 @@ public class meds : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+
+        //adds a value in the game manager
         if (other.tag == "Player")
         {
             FindObjectOfType<GameManager>().add_meds(value);
