@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - back_ground
-  - BackGround
+  - Meds
+  - Guard
   layers:
   - Default
   - TransparentFX
@@ -16,8 +16,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
