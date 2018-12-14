@@ -12,7 +12,7 @@ public class detect_player : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && other.GetComponent<PlayerController>().distguised == false)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene("Start Menu");
 
 
 

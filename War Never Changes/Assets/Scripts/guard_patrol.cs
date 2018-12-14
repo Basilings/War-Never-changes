@@ -10,6 +10,8 @@ public class guard_patrol : MonoBehaviour {
     public float flip = 180;
     private Rigidbody _myRB;
     private bool _isFacingLeft;
+    private Vector3 reset_position;
+
 
     void Start()
     {
@@ -33,6 +35,13 @@ public class guard_patrol : MonoBehaviour {
             Flip();
         }
 
+
+        if (transform.position.z > -0.5 || transform.position.z < 0.5)
+        {
+            reset_position = new Vector3(transform.position.x, transform.position.y, 0);
+
+            transform.position = reset_position;
+        }
 
     }
 
