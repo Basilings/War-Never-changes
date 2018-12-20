@@ -12,10 +12,7 @@ public class detect_player : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && other.GetComponent<PlayerController>().distguised == false)
         {
-            SceneManager.LoadScene("Start Menu");
-
-
-
+            SceneManager.LoadScene("Fail Scene");
         }
     }
 }

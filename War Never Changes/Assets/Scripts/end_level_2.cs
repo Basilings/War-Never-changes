@@ -10,7 +10,7 @@ public class end_level_2 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Start Menu");
+            SceneManager.LoadScene("End Screen");
 
         }
     }
