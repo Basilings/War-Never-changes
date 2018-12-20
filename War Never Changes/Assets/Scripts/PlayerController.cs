@@ -9,35 +9,37 @@ public class PlayerController : MonoBehaviour
     private Animator PlayerAnimator;
     private Vector3 reset_player;
     public bool distguised = false;
-    
+    private float forward;
+
+
+
+
     void Start()
     {
         PlayerAnimator = GetComponent<Animator>();
+       
     }
 
-    
+
     void Update()
     {
-
+        PlayerAnimator.SetFloat("Forward", forward);
+        forward = Input.GetAxis("Horizontal");
         //Movement
+        Vector3 move = new Vector3(forward, 0, 0);
 
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-  
-        
 
-       
         //the sneak mechanic
         if (Input.GetKeyDown(KeyCode.W))
         {
-            player.Translate(0, 0, -back_ground);
-
+            PlayerAnimator.SetBool("Hiding", true);
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
+            PlayerAnimator.SetBool("Hiding", false);
             reset_player = new Vector3(player.position.x, player.position.y, 0);
             player.position = reset_player;
-
         }
 
 
