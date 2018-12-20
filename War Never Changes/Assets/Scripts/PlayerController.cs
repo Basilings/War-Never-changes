@@ -6,15 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public float back_ground = 10;
     public Transform player;
-    public float player_speed = -4;
-    private CharacterController controller;
+    private Animator PlayerAnimator;
     private Vector3 reset_player;
     public bool distguised = false;
     
     void Start()
     {
-
-        controller = GetComponent<CharacterController>();
+        PlayerAnimator = GetComponent<Animator>();
     }
 
     
@@ -24,7 +22,7 @@ public class PlayerController : MonoBehaviour
         //Movement
 
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-            controller.SimpleMove(move * player_speed);
+  
         
 
        
@@ -33,7 +31,6 @@ public class PlayerController : MonoBehaviour
         {
             player.Translate(0, 0, -back_ground);
 
-            controller.enabled = !controller.enabled;
         }
 
         if (Input.GetKeyUp(KeyCode.W))
@@ -41,7 +38,6 @@ public class PlayerController : MonoBehaviour
             reset_player = new Vector3(player.position.x, player.position.y, 0);
             player.position = reset_player;
 
-            controller.enabled = !controller.enabled;
         }
 
 

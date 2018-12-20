@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4474627732163262}
-  - component: {fileID: 33601881975727840}
   - component: {fileID: 23172121786862830}
   - component: {fileID: 136856251025255160}
   - component: {fileID: 54345949780669314}
@@ -257,13 +256,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33601881975727840
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082587022259510}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &54345949780669314
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -362,8 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58eb18d52ccc567479279f61694aeee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerscript: {fileID: 0}
-  MaxSpeed: 2
+  max_speed: 3
   LeftPos: {fileID: 4348316172818328}
   RightPos: {fileID: 4539406714095406}
   flip: 180
