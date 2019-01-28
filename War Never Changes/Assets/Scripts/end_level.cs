@@ -10,7 +10,7 @@ public class end_level : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Enemy Hub");
 
         }
     }
