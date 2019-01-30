@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class end_level_2 : MonoBehaviour
+public class end_level_5 : MonoBehaviour
 {
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Food Statistics");
+            SceneManager.LoadScene("Enemy Hub 3");
 
         }
     }

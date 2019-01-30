@@ -15,6 +15,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Enemy Hub.unity
     guid: 4f310404d35e95440bfe4d2e4d0d4765
   - enabled: 1
+    path: Assets/Scenes/Food Statistic.unity
+    guid: d044e1c199b2d434eab82041125da78a
+  - enabled: 1
+    path: Assets/Scenes/Friendly Hub 2.unity
+    guid: b6a8fa293f1b6af42be98a7c2fccc15d
+  - enabled: 1
+    path: Assets/Scenes/Enemy Hub 2.unity
+    guid: 2249f426317918546bf6caf4a5ec5b02
+  - enabled: 1
+    path: Assets/Scenes/Med Statistics.unity
+    guid: 7ccc4687e6a2e624dab73d82f5a58deb
+  - enabled: 1
+    path: Assets/Scenes/Friendly Hub 3.unity
+    guid: 317de6976cd4f6346917f7a48745be9b
+  - enabled: 1
+    path: Assets/Scenes/Enemy Hub 3.unity
+    guid: dd6e9088518272c4cb938ef479fa5de1
+  - enabled: 1
+    path: Assets/Scenes/Desert Statistics.unity
+    guid: dbaf201a2f8390e4bbf4f1570ed28960
+  - enabled: 1
     path: Assets/Scenes/End Scene.unity
     guid: 6d154e66ebfb9aa42a75771ab695945e
   - enabled: 1
